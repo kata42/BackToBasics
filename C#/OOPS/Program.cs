@@ -19,7 +19,11 @@ namespace OOPS
             int myValue = 0;
             string myString = "dsafsdf";
             Car myCar = new ElectricCar();
-            myCar.Move();
+            myCar.Undefined();
+
+            myCar = new PetrolCar();
+            myCar.Undefined();
+
             //Car yourCar = new Car("Violet");
             //Car theirCar = new Car("Violet","MyModel",1990);
 

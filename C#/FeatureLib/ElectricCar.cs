@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace FeatureLib
 {
     public class ElectricCar: Car
@@ -10,7 +12,7 @@ namespace FeatureLib
 
         public override void Undefined()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("From ElectricCar");
         }
 
         public override void Move()
