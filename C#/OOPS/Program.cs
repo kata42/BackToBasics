@@ -16,15 +16,18 @@ namespace OOPS
          * */
         static void Main(string[] args)
         {
-            Car myCar = new Car();
-            Car yourCar = new Car("Violet");
-            Car theirCar = new Car("Violet","MyModel",1990);
+            int myValue = 0;
+            string myString = "dsafsdf";
+            Car myCar = new ElectricCar();
+            myCar.Move();
+            //Car yourCar = new Car("Violet");
+            //Car theirCar = new Car("Violet","MyModel",1990);
 
             Console.WriteLine("Hello World!");
             Console.WriteLine($"My Car is {myCar.color} color");
-            Console.WriteLine($"Your Car is {yourCar.color} color");
+            //Console.WriteLine($"Your Car is {yourCar.color} color");
 
-            Console.WriteLine($"Their Car has {theirCar.color} color, {theirCar.model} model and manifactured in {theirCar.year}");
+            //Console.WriteLine($"Their Car has {theirCar.color} color, {theirCar.model} model and manifactured in {theirCar.year}");
 
             Console.WriteLine($"Count = {Car.count}");
         }

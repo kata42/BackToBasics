@@ -1,11 +1,21 @@
 ﻿
 namespace FeatureLib
 {
-    class ElectricCar: Car
+    public class ElectricCar: Car
     {
-        internal string GetColor()
+        public string Fly()
         {
-            return "Electric Color";
+            return "Car isi flying";
+        }
+
+        public override void Undefined()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void Move()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

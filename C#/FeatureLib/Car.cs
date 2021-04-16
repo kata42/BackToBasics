@@ -1,7 +1,7 @@
 ﻿
 namespace FeatureLib
 {   
-    public class Car
+    public abstract class Car: IVehicle
     {
         public static int count = 0;
 
@@ -29,10 +29,17 @@ namespace FeatureLib
             count++;
         }
 
-        internal virtual string GetColor()
+        public string GetColor()
         {
             return color;
         }
+
+        public virtual void Move()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public abstract void Undefined();
 
         //internal string GetColor(string area)
         //{
